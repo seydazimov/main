@@ -1,0 +1,873 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.all {
+    width: 100%;
+    height: 978vh;
+}
+#first {
+    background-color: white;
+    color: black;
+}
+.chotka {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.chotka p {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+}
+.buttonUp {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(up2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    z-index: 3;
+}
+.page1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(page1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page1 img {
+    width: 100%;
+    height: 100%;
+}
+header {
+    z-index: 3;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+nav {
+    color: white;
+    font-size: 0.8em;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.menu {
+    display: none;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menuButton {
+    width: 64px;
+    height: 64px;
+    background-image: url(menu.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    height: 94%;
+    cursor: pointer;
+    padding-bottom: 5px;
+    transition: font-size 1s;
+}
+nav div:hover {
+    font-size: 1.1em;
+}
+.logo {
+    color: white;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+h1, h4 {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    opacity: 0;
+    right: 15%;
+    width: 45%;
+    top: 45%;
+    font-size: 2.5em;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h4 {
+    width: 45%;
+    opacity: 0;
+    left: 15%;
+    top: 62%;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.black {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 850vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.page2 {
+    position: absolute;
+    top: 100vh;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.textPage2 {
+    z-index: 2;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.textPage2 p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+#big {
+    font-size: 2em;
+    font-weight: 700;
+}
+.photoPage2 {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+.photoPage2 img {
+    width: 100%;
+    height: 80%;
+}
+.butPage2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    color: white;
+    background-color: red;
+    padding: 15px 35px;
+    transition: background-color 1s, color 1s;
+}
+.butPage2:hover {
+    color: black;
+    background-color: white;
+}
+.page3 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 200vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.textPage3 {
+    position: absolute;
+    top: 10%;
+    z-index: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 15vh;
+}
+.examplesPage3 {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+}
+.examplesPage3 div {
+    width: 23%;
+    height: 100%;
+    color: white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: font-size 2s, background-size 2s;
+}
+#semya {
+    background-image: url(semya.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#reklama {
+    background-image: url(reklama.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#loveStory {
+    background-image: url(loveStory.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#individ {
+    background-image: url(individ.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.examplesPage3 div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    z-index: 2;
+}
+.examplesPage3 div:hover {
+    font-size: 1.2em;
+}
+.page4 {
+    width: 100%;
+    height: 450vh;
+    position: absolute;
+    top: 300vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+}
+.textPage4 {
+    z-index: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 15vh;
+}
+.photos {
+    z-index: 2;
+    width: 90%;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.photos div {
+    z-index: 0;
+    width: 45%;
+    height: 60vh;
+    margin-bottom: 20px;
+    transition: width 1.2s, height 1.2s;
+}
+.photos div:hover {
+    width: 50%;
+    height: 70vh;
+}
+.photos .short {
+    width: 25%;
+    height: 60vh;
+    transition: width 1.2s, height 1.2s;
+}
+.photos .short:hover {
+    width: 30%;
+    height: 70vh;
+}
+.photos div img {
+    width: 100%;
+    height: 100%;
+}
+.videos {
+    z-index: 2;
+    width: 90%;
+    height: 180vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.videos div  {
+    width: 40%;
+    height: 50vh;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.videos div video {
+    width: 100%;
+    height: 100%;
+}
+.textPhoto, .textVideo {
+    z-index: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+    border-bottom: 1px solid white;
+}
+.page5 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 750vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textPage5 {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 15vh;
+}
+.team {
+    z-index: 2;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.asan, .usen {
+    top: 20%;
+    position: absolute;
+    width: 40%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.asan {
+    left: 0;
+}
+.usen {
+    right: 0;
+}
+.asanPhoto, .usenPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(asan.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 60%;
+    border-radius: 50%;
+    
+}
+.usenPhoto {
+    background-image: url(usen.jpg);
+}
+.asanInfo, .usenInfo {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.asanInfo p, .usenInfo p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    color: white;
+    line-height: 40px;
+}
+p.nameTeam {
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    border-bottom: 2px solid white;
+}
+.leftAr img, .rightAr img{
+    width: 80%;
+    height: 80%;
+}
+.prefooter {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    position: absolute;
+    top: 850vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.textPrefooter {
+    height: 10vh;
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.7em;
+    color: white;
+    text-align: center;
+}
+.textPrefooter p {
+    font-size: 0.7em;
+}
+.client {
+    height: 30vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.client div {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client .nameClient input, .client .numberClient input {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    height: 70%;
+} 
+.client .submit {
+    background-color: red;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    text-align: center;
+    width: 30%;
+    height: 25%;
+}
+footer {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 900.7vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.textFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.7em;
+    color: white;
+}
+.photoVideo {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.photoVideo .photoInfo, .photoVideo .videoInfo {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.7em;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-right: 3px solid white;
+    padding: 7px;
+}
+.photoVideo .videoInfo {
+    border-right: none;
+}
+.photoVideo .photoInfo .photoInsta, .photoVideo .videoInfo .videoInsta {
+    font-family: 'Times New Roman', Times, serif;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    font-size: 0.9em;
+    align-items: center;
+    justify-content: space-around;
+}
+.photoInsta .photoInsta1, .photoInsta .photoInsta2, .videoInsta .videoInsta1, .videoInsta .videoInsta2 {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: space-around;
+}
+.photoInsta .photoInsta1, .videoInsta .videoInsta1 {
+    width: 50%;
+}
+.photoInsta img, .videoInsta img {
+    width: 20%;
+    height: 100%;
+}
+.someText {
+    color: white;
+    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(max-width: 1100px) {
+
+    html {
+        font-size: 14px;
+    }
+    nav {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+    .asan, .usen {
+        height: 65%;
+        width: 50%;
+    }   
+    .asanPhoto, .usenPhoto {
+        width: 45%;
+    }
+    .photos div {
+        height: 50vh;
+    }
+    .photos div:hover {
+        height: 60vh;
+    }
+    .photos .short {
+        height: 40vh;
+    }
+    .photos .short:hover {
+        height: 50vh;
+    }
+}
+@media(max-width: 1000px) {
+    .photoVideo .photoInfo .photoInsta, .photoVideo .videoInfo .videoInsta {
+        flex-direction: column;
+    }
+    .photoInsta .photoInsta1, .videoInsta .videoInsta1 {
+        width: 55%;
+    }
+    .photoInsta .photoInsta2, .videoInsta .videoInsta2 {
+        width: 50%;
+    }
+}
+@media(max-width: 900px) {
+    html {
+        font-size: 13px;
+    }
+    .photos div {
+        height: 50vh;
+    }
+    .photos div:hover {
+        height: 60vh;
+    }
+    .photos .short {
+        height: 40vh;
+    }
+    .photos .short:hover {
+        height: 50vh;
+    }
+    .asanPhoto, .usenPhoto {
+        width: 60%;
+    }
+    .asanInfo, .usenInfo {
+        width: 60%;
+    }
+    .examplesPage3 div {
+        width: 35%;
+        height: 70%;
+    }
+    .photoPage2 {
+        width: 70vh;
+    }
+}
+@media(max-width: 750px) {
+    .asanPhoto, .usenPhoto {
+        height: 50%;
+    }
+    .asanInfo, .usenInfo {
+        width: 70%;
+    }
+}
+
+@media(max-width: 650px) {
+    html {
+        font-size: 12px;
+    }
+    .videos div {
+        width: 70%;
+    }
+    .fourV, .fiveV, .sixV {
+        display: none;
+    }
+    .asanInfo, .usenInfo {
+        width: 75%;
+    }
+    .asanPhoto, .usenPhoto {
+        height: 45%;
+    }
+}
+@media(max-width: 600px) {
+    html {
+        font-size: 11px;
+    }
+    .asanPhoto, .usenPhoto {
+        height: 45%;
+    }
+    .asanInfo, .usenInfo {
+        width: 80%;   
+    }
+    .asanInfo p, .usenInfo p {
+        font-size: 1em;
+    }
+    .chotka p {
+        font-size: 1.2em;
+    }
+    .photos #oneki, .photos #ontogyz {
+        display: none;
+    }
+    .photos div {
+        width: 60%;
+        height: 60vh;
+    }
+    .photos div:hover {
+        width: 70%;
+        height: 70vh;
+    }
+    .photos .short {
+        width: 30%;
+        height: 50vh;
+    }
+    .photos .short:hover {
+        width: 35%;
+        height: 60vh;
+    }
+}
+@media(max-width: 550px) {
+    .asanPhoto, .usenPhoto {
+        height: 40%;
+    }
+    .photos div {
+        width: 60%;
+        height: 50vh;
+    }
+    .photos div:hover {
+        width: 70%;
+        height: 60vh;
+    }
+    .photos .short {
+        width: 30%;
+        height: 40vh;
+    }
+    .photos .short:hover {
+        width: 35%;
+        height: 50vh;
+    }
+}
+@media(max-width: 500px) {
+    .asanInfo p, .usenInfo p {
+        font-size: 0.9em;
+    }
+    html {
+        font-size: 10px;
+    }
+    .photos .short {
+        width: 30%;
+        height: 40vh;
+    }
+    .photos .short:hover {
+        width: 35%;
+        height: 50vh;
+    }
+    .photos div:hover {
+        width: 70%;
+        height: 60vh;
+    }
+}
+@media(max-width: 500px) {
+    .asanInfo p, .usenInfo p {
+        font-size: 0.8em;
+    }
+    .chotka p {
+        font-size: 1.2em;
+    }
+}
+@media(max-width: 400px) {
+    
+    .asanInfo p, .usenInfo p {
+        width: 80%;
+        font-size: 0.8em;
+    }
+    .asanPhoto, .usenPhoto {
+        height: 30%;
+    }
+    .chotka p {
+        font-size: 1em;
+    }
+    .photos .short {
+        width: 30%;
+        height: 35vh;
+    }
+    .photos div {
+        width: 60%;
+        height: 40vh;
+    }
+    .photos div:hover {
+        width: 70%;
+        height: 50vh;
+    }
+    .photos .short:hover {
+        width: 35%;
+        height: 40vh;
+    }
+}
+@media(min-height: 700px)  {
+    .asanPhoto, .usenPhoto {
+        width: 70%;
+        height: 35%;
+    }
+    .asanInfo p, .usenInfo p {
+        width: 90%;
+        font-size: 0.8em;
+    }
+    .photos div {
+        height: 40vh;
+    }
+    .photos div:hover {
+        width: 70%;
+        height: 50vh;
+    }
+    .photos .short {
+        width: 30%;
+        height: 40vh;
+    }
+    .photos .short:hover {
+        width: 35%;
+        height: 50vh;
+    }
+}
+@media(min-height: 800px) {
+    .photos div {
+        height: 30vh;
+    }
+    .photos div:hover {
+        width: 70%;
+        height: 35vh;
+    }
+    .photos .short {
+        width: 30%;
+        height: 30vh;
+    }
+    .photos .short:hover {
+        width: 35%;
+        height: 35vh;
+    }
+}
